@@ -79,3 +79,9 @@ header :first-child:hover .nav-item {
         margin-right: 20px;
     }
 }
+
+@media (max-width: 768px){
+    .arrow-up i {
+        font-size: calc(2.5rem + .6vw)!important;;
+    }
+}
