@@ -84,4 +84,13 @@ header :first-child:hover .nav-item {
     .arrow-up i {
         font-size: calc(2.5rem + .6vw)!important;;
     }
+    
+    .popup-section .popup-section-body .popup-content {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .popup-section .popup-section-body{
+        width: 100% !important;
+    }
 }

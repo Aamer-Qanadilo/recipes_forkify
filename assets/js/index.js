@@ -45,7 +45,7 @@ function displayData(){
 
     for(let i=0 ; i<recipes.length ; i++){
         data += `
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="card h-100 m-1 p-1 item">
                         <div class="card-img-top card-img" style="background-image: url('${recipes[i].image_url}')"></div>
                         <div class="card-body d-flex flex-column justify-content-end text-center">
@@ -84,12 +84,12 @@ function popupScreen(recipe){
             <div class="popup-section-body bg-light position-absolute text-white d-flex flex-column">
                 <h3 class="fs-4 text-center text-secondary text-styles py-3 border-bottom">${recipe.title}</h3>
                 <div class="d-flex flex-row align-items-center">
-                    <div class="col-6 d-flex flex-column">
+                    <div class="col-6 d-none d-md-flex flex-column">
                         <div class="w-100 popup-img" style="background-image: url('${recipe.image_url}')"></div>
                         <a href="${recipe.source_url}" target="_blank" class="btn btn-secondary w-100">Visit Website</a>
                     </div>
                     <div class="popup-content col-6">
-                        <ul class="list-group list-group-flush">
+                        <ul class="list-group list-group-flush mb-5">
                             ${recipe.ingredients.map(ingredient => `<li class="list-group-item">${ingredient}</li>`).join('')}
                         </ul>
                     </div>
